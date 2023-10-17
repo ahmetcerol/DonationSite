@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Info from './components/InfoSection';
 import Organisations from './components/Organisation';
 import ProjectDetails from './components/OrganisationDetails';
+import Footer from './components/Footer';
 
 
 
@@ -45,7 +46,7 @@ function App() {
           }
     </Body>
     </Router>
-   
+    <Footer/>
    </ThemeProvider>
   );
 }

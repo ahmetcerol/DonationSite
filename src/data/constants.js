@@ -1,10 +1,11 @@
 export const Bio = {
     name:"Bağış Yap",
     roles: [
-      "LÖSEV",
-      "TEMA VAKFI",
-      "KIZILAY",
-      "YEŞİLAY",
+      "Hayat KURTAR",
+      "KAN VER",
+      "BAĞIŞ YAP",
+      "SOKAK HAYVANLARINI BESLE",
+      "BİR İNSANIN HAYATINA DOKUN"
     ],
     description:
       "Sitemiz, bağış yapmak isteyenler için tüm kurumları tek bir çatı altında birleştirerek, insanlara kolay ve hızlı erişim sağlamayı hedefler. Ayrıca, sosyal medyadan gelen bağış gönderilerini kullanıcılarımıza sunarak, isteyen herkesin bu güzel eyleme katkıda bulunmasını sağlarız. Tüm bunları yaparken amacımız sadece insanların ihtiyaç sahiplerine yardım etmelerine olanak tanımak, hiçbir gelir amacı gütmeden.",

@@ -8,7 +8,8 @@ export const darkTheme = {
     card_light: "#333333", // Kart arka planının hafif tonu
     button: "#4CAF50", // Yeşil düğme rengi
     white: "#FFFFFF", // Beyaz renk
-    black: "#000000" // Siyah renk
+    black: "#000000",// Siyah renk
+    red:"#FF0000"//Kırmızı Renk
 }
 
 export const lightTheme = {
@@ -21,5 +22,6 @@ export const lightTheme = {
     card_light: "#F0F0F0", // Kart arka planının hafif tonu
     button: "#4CAF50", // Yeşil düğme rengi
     white: "#FFFFFF", // Beyaz renk
-    black: "#000000" // Siyah renk
+    black: "#000000",// Siyah renk
+    red:"#FF0000"//Kırmızı Renk
 }
