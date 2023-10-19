@@ -27,7 +27,7 @@ const ToggleInput = styled.input.attrs({ type: 'checkbox' })`
   }
 
   &:checked + span:after {
-    content: '☀️'; /* Güneş simgesi */
+    content: '🌑'; /* Güneş simgesi */
     position: absolute;
     top: 50%;
     left: 2px;
@@ -36,7 +36,7 @@ const ToggleInput = styled.input.attrs({ type: 'checkbox' })`
   }
 
   &:not(:checked) + span:after {
-    content: '🌑'; /* Ay simgesi */
+    content: '☀️'; /* Ay simgesi */
     position: absolute;
     top: 50%;
     right: 2px;

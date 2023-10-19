@@ -15,7 +15,7 @@ const Organisations = ({openModal,setOpenModal}) => {
           {toggle === 'all' ?
             <ToggleButton active value="all" onClick={() => setToggle('all')}>Tüm Çalışmalar</ToggleButton>
             :
-            <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
+            <ToggleButton value="all" onClick={() => setToggle('all')}>Tüm Çalışmalar</ToggleButton>
           }
           <Divider />
           {toggle === 'Vakıf' ?

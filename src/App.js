@@ -27,9 +27,9 @@ background: linear-gradient(38.73deg, rgba(0, 128, 0, 0.15) 0%, rgba(0, 128, 0, 
 
 function App() {
   const [openModal, setOpenModal] = useState({ state: false, project: null });
-  const [currentTheme, setCurrentTheme] = useState(darkTheme);
+  const [currentTheme, setCurrentTheme] = useState(lightTheme);
   const toggleTheme = () => {
-    setCurrentTheme(currentTheme === darkTheme ? lightTheme : darkTheme);
+    setCurrentTheme(currentTheme === lightTheme ? darkTheme : lightTheme);
   };
   return (
     <ThemeProvider theme={currentTheme}>
