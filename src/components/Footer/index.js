@@ -75,8 +75,10 @@ function Footer() {
       <FooterWrapper>
         <Logo>Bağış YAP ! </Logo>
         <Nav>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#organisation">Organisations</NavLink>
+          <NavLink href="#about">Hakkımızda </NavLink>
+          <NavLink href="#organisation">Organizasyonlar</NavLink>
+          <NavLink href="#contribute">Amacımız Nedir ?</NavLink>
+
         </Nav>
         <Copyright>
           &copy; 2023 Bağış Yap. All rights reserved.

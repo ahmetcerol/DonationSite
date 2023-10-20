@@ -8,6 +8,7 @@ import Info from './components/InfoSection';
 import Organisations from './components/Organisation';
 import ProjectDetails from './components/OrganisationDetails';
 import Footer from './components/Footer';
+import Contribute from './components/WhatWeContribute';
 
 
 
@@ -32,21 +33,24 @@ function App() {
     setCurrentTheme(currentTheme === lightTheme ? darkTheme : lightTheme);
   };
   return (
+    
+    
     <ThemeProvider theme={currentTheme}>
     <Router>
     <Navbar toggleTheme={toggleTheme}/>
     <Body>
         <Info/>
-
         <Wrapper>
         <Organisations openModal={openModal} setOpenModal={setOpenModal} />
         </Wrapper>
+        <Contribute/>
         {openModal.state &&
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
           }
     </Body>
     </Router>
     <Footer/>
+    
    </ThemeProvider>
   );
 }

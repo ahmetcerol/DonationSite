@@ -84,9 +84,9 @@ const Navbar = ({toggleTheme}) => {
           }} />
         </MobileIcon>
         <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href='#organisation'>Organisation</NavLink>
-          <NavLink href='#contribute'>What We contribute</NavLink>
+          <NavLink href="#about">Hakkımızda</NavLink>
+          <NavLink href='#organisation'>Organizasyonlar</NavLink>
+          <NavLink href='#contribute'>Amacımız Ne ? </NavLink>
         </NavItems>
         <ButtonContainer>
             <ToggleSwitch>

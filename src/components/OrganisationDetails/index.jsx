@@ -63,12 +63,6 @@ const Image = styled.img`
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 `;
 
-
-
-
-
-
-
 const ButtonGroup = styled.div`
     display: flex;
     justify-content: flex-end;
@@ -102,7 +96,6 @@ const Button = styled.a`
         font-size: 12px;
     }
 `;
-
 
 const ProjectDetails = ({ openModal, setOpenModal }) => {
     const organisation = openModal?.organisation;
