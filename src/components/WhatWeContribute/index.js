@@ -16,6 +16,7 @@ const Contribute = () => {
                 <SubTitle>{contribute.amaçSubTitle}</SubTitle>
                 <Title> {contribute.bizKimizHeader} </Title>
                 <SubTitle>{contribute.bizKimizSubTitle}</SubTitle>
+
             </HeroLeftContainer>
             
         </HeroInnerContainer>

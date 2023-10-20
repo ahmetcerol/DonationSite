@@ -77,12 +77,18 @@ export const HeroRightContainer = styled.div`
 export const Img = styled.img`
   position: absolute;
   right: 0;
-  bottom:0;
-  height: 1200px; /* Resmin yüksekliği ekranın tam yüksekliğine uzanacak */
-  border: 0; /* Çerçeve yok */
-  object-fit: cover; /* Resmi kapsayan alana sığdır */
-  object-position: top right; /* Resmi sağ üst köşede hizala */
-  z-index: 1; /* Diğer öğelerin üzerinde olmasını sağla */
+  bottom: 0;
+  border: 0;
+  object-fit: cover;
+  object-position: top right;
+  z-index: 1;
+  height: 1200px;
+
+  @media (max-width: 768px) {
+    height: auto; /* Ekran 768 pikselden daha küçükse, resmi otomatik boyutlandır */
+    width: 100%; /* Genişliği tam ekran genişliği kadar ayarla */
+    object-fit: contain; /* Resmi kapsayan alana sığdır, orijinal boyutlarına bozmadan */
+  }
 `;
 
 
