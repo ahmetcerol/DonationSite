@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Snackbar } from '@mui/material';
+import { useState } from 'react';
 
 const Container = styled.div`
 display: flex;
@@ -119,25 +120,46 @@ const ContactButton = styled.input`
 `
 
 
-
 const Contact = () => {
-
-  //hooks
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [error, setError] = useState('');
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_67slqzo', 'template_lrfuk4k', form.current, 'YTz_gQN27o-56_0Kl')
-      .then((result) => {
-        setOpen(true);
-        form.current.reset();
-      }, (error) => {
-        console.log(error.text);
-      });
-  }
+    const email = form.current.from_email.value;
+    const name = form.current.from_name.value;
+    const subject = form.current.subject.value;
+    const message = form.current.message.value;
 
+    if (!email || !name || !subject || !message) {
+      setError('Tüm alanları doldurmalısınız.');
+      return;
+    }
 
+    if (!validateEmail(email)) {
+      setError('Geçerli bir email giriniz !');
+      return;
+    }
+
+    emailjs
+      .sendForm('service_67slqzo', 'template_lrfuk4k', form.current, 'YTz_gQN27o-56_0Kl')
+      .then(
+        (result) => {
+          setOpen(true);
+          form.current.reset();
+          setError('');
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    return emailRegex.test(email);
+  };
 
   return (
     <div id="contact">
@@ -153,17 +175,20 @@ const Contact = () => {
           <ContactInputMessage placeholder="Mesaj" rows="4" name="message" />
           <ContactButton type="submit" value="Gönder" />
         </ContactForm>
+        {error && <div style={{ color: 'red' }}>{error}</div>}
         <Snackbar
           open={open}
           autoHideDuration={6000}
           onClose={()=>setOpen(false)}
-          message="Email sent successfully!"
+          message="Email başarı ile gönderildi."
           severity="success"
         />
       </Wrapper>
     </Container>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
+
+
