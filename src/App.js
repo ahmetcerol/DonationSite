@@ -9,6 +9,7 @@ import Organisations from './components/Organisation';
 import ProjectDetails from './components/OrganisationDetails';
 import Footer from './components/Footer';
 import Contribute from './components/WhatWeContribute';
+import Contact from './components/Contact';
 
 
 
@@ -44,6 +45,7 @@ function App() {
         <Organisations openModal={openModal} setOpenModal={setOpenModal} />
         </Wrapper>
         <Contribute/>
+        <Contact/>
         {openModal.state &&
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
           }

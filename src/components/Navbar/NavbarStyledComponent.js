@@ -32,11 +32,11 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 70px;
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1200px;
+  max-width: 1800px;
 `;
 
 
@@ -60,7 +60,7 @@ export const NavItems = styled.ul`
     display: flex;
     align-items: center;
     justify-content:center;
-    gap: 32px;
+    gap: 45px;
     list-style: none;
 
     @media screen and (max-width: 768px) {
