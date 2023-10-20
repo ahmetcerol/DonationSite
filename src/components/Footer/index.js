@@ -74,12 +74,7 @@ function Footer() {
     <FooterContainer>
       <FooterWrapper>
         <Logo>Bağış YAP ! </Logo>
-        <Nav>
-          <NavLink href="#about">Hakkımızda </NavLink>
-          <NavLink href="#organisation">Organizasyonlar</NavLink>
-          <NavLink href="#contribute">Amacımız Nedir ?</NavLink>
-
-        </Nav>
+      
         <Copyright>
           &copy; 2023 Bağış Yap. All rights reserved.
         </Copyright>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, NavLink, NavbarContainer,NavItems, ButtonContainer, MobileIcon, MobileMenu, MobileMenuLink } from './NavbarStyledComponent'
+import { Nav,NavLogo, NavLink, NavbarContainer,NavItems, ButtonContainer, MobileIcon, MobileMenu, MobileMenuLink } from './NavbarStyledComponent'
 import { FaBars } from 'react-icons/fa';
 import { useTheme } from 'styled-components';
 import styled from 'styled-components';
@@ -77,7 +77,12 @@ const Navbar = ({toggleTheme}) => {
     return (
 <Nav>
     <NavbarContainer>
-    
+    <NavLogo to='/'>
+          <a style={{ display: "flex", alignItems: "center", color: "white",marginTop:'50px;', cursor: 'pointer' }}>
+          <img src="images/donationicon.png" alt="Logo"   style={{ width: "3rem", height: "3rem", marginRight:"10px", marginTop:"20px;" }}
+/>
+          </a>
+        </NavLogo>
         <MobileIcon>
           <FaBars onClick={() => {
             setIsOpen(!isOpen)

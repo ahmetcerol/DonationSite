@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
 
 
 export const Nav = styled.div`
@@ -15,7 +16,18 @@ export const Nav = styled.div`
         trastion: 0.8s all ease;
     }
 `;
-
+export const NavLogo = styled(LinkR)`
+    width: 80%;    
+    padding: 0 6px;
+    display: flex;
+    justify-self: flex-start;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    @media screen and (max-width: 640px) {
+      padding: 0 0px;
+  }
+`;
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
