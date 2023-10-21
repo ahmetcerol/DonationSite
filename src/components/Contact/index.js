@@ -169,7 +169,7 @@ const Contact = () => {
         <Desc>Burada olmasını istediğiniz gönderiler için, bize ulaşmakta çekinmeyin!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email 🚀</ContactTitle>
-          <ContactInput placeholder="Email" name="from_email" />
+          <ContactInput placeholder="E-mail Adresiniz" name="from_email" />
           <ContactInput placeholder="Adınız" name="from_name" />
           <ContactInput placeholder="Konu" name="subject" />
           <ContactInputMessage placeholder="Mesaj" rows="4" name="message" />
