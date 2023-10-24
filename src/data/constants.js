@@ -120,15 +120,7 @@ export const Bio = {
       instagramUrl: "https://www.instagram.com/p/Cyl8mCasQvc/?",
       liveApp:"https://www.instagram.com/mony_animal_love_/"
     },
-    {
-      id: 9,
-      title: "Kanser Savaşçıları Derneği",
-      description:
-        "Amacı: Kanser olan veya daha önce kanser atlatmış insanlara yardım etmek.",
-      category: "Instagram",
-      instagramUrl: "https://www.instagram.com/p/CxdPKeroQGM/?img_index=2?",
-      liveApp:"https://www.instagram.com/kansersavascilari/"
-    },
+
     {
       id: 10,
       title: "Günebakan Vakfı",

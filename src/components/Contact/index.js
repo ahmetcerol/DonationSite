@@ -109,7 +109,6 @@ const ContactButton = styled.input`
   text-decoration: none;
   text-align: center;
   background: ${({ theme }) => `linear-gradient(225deg, ${theme.primary} 0%, ${theme.button} 100%)`};
-
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;
@@ -117,7 +116,16 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
-`
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+`;
 
 
 const Contact = () => {
